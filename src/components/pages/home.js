@@ -12,7 +12,7 @@ export default class Home extends Component {
   render() {
     return (
       <div className="home-wrapper">
-        <Carousel className="carousel">
+        <Carousel className="carousel" expand="lg">
           <Carousel.Item>
             <img
               className="d-block w-100"
@@ -51,9 +51,23 @@ export default class Home extends Component {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-        <Navbar className="navbar" bg="dark" expand="lg"/>
-        <div className="home-content" style={{height: '80vh'}}>
-            Content
+        <Navbar className="navbar" bg="black" expand="lg" />
+        <div className="home-content" style={{ height: "80vh" }}>
+          <div className="rowOne">
+            <div className="oneOne">
+              <h2>Services</h2>
+              <h4>Check Out Our Services!</h4>
+            </div>
+            <div className="oneTwo">
+              <h2>About</h2>
+              <h4>Learn How We Started!</h4>
+            </div>
+            <div className="oneThree">
+              <h2>Contact Us</h2>
+              <h4>We'd love to hear from you!</h4>
+            </div>
+          </div>
+          <div className="rowTwo">-</div>
         </div>
       </div>
     );

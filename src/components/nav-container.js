@@ -16,7 +16,7 @@ export default class NavContainer extends Component {
   render() {
     return (
       <Navbar className="navbar" expand="lg" style={{boxShadow: "0px 2px 11px 0px rgba(0,0,0,0.75)"}}>
-        <Navbar.Brand href="#home" style={{fontStyle: 'italic', textDecoration: 'underline', textDecorationColor: 'white'}}>
+        <Navbar.Brand href="/" style={{fontStyle: 'italic', textDecoration: 'underline', textDecorationColor: 'white', marginRight: '5%'}}>
             <span style={{color: 'red'}}>No</span>    
             <span style={{color: 'white'}}> Mo'</span>
             <span style={{color: 'blue'}}> Mosquito</span>
@@ -24,10 +24,10 @@ export default class NavContainer extends Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link style={{color: 'red'}} href="/">Home</Nav.Link>
-            <Nav.Link style={{color: 'white'}} href="about">About</Nav.Link>
-            <Nav.Link style={{color: 'blue'}} href="contact">Contact Us</Nav.Link>
-            <Nav.Link style={{color: 'red'}} href="services">Services</Nav.Link>
+            <Nav.Link className="nav-link red" style={{color: 'red'}} href="/">Home</Nav.Link>
+            <Nav.Link className="nav-link white" style={{color: 'white'}} href="about">About</Nav.Link>
+            <Nav.Link className="nav-link blue" style={{color: 'blue'}} href="contact">Contact Us</Nav.Link>
+            <Nav.Link className="nav-link red" style={{color: 'red'}} href="services">Services</Nav.Link>
           </Nav>
           <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />

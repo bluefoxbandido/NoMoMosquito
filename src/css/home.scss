@@ -1,3 +1,77 @@
+#root {
+  width: 100%;
+}
+body {
+  width: 100vw;
+}
 .home-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, 33vh);
+  background-color: whitesmoke;
+  justify-self: center;
+
+  h2 {
+    font-weight: bolder;
+  }
+
+  h4 {
+    font-style: italic;
+  }
+  .rowOne {
+    display: flex;
+    flex-direction: row;
+    @media(max-width: 1200px) {
+        flex-direction: column;
+        height: 60vh;
+    }
+    width: 90vw;
+    height: 20vw;
+    margin-left: 5vw;
+    margin-top: 4vh;
+    justify-content: space-between;
+    justify-self: center;
+    text-align: center;
+    padding: 5vh;
     background-color: gray;
+
+    div {
+      background-color: rgb(156, 147, 147);
+    }
+  }
+
+  .oneOne {
+    display: grid;
+    align-items: center;
+    grid-row: 1;
+    grid-column: 1;
+    flex-direction: column;
+
+    padding: 3vh;
+  }
+
+  .oneTwo {
+    display: grid;
+    align-items: center;
+    grid-row: 1;
+    grid-column: 2;
+    flex-direction: column;
+
+    padding: 3vh;
+  }
+
+  .oneThree {
+    display: grid;
+    align-items: center;
+    grid-row: 1;
+    grid-column: 3;
+    flex-direction: column;
+
+    padding: 3vh;
+  }
+
+  .rowTwo {
+    display: grid;
+    grid-row: 2;
+  }
 }
