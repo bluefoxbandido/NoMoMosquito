@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Navbar from "react-bootstrap/Navbar";
+import CarouselOne from "../../photos/pexels-elevate-1267337.jpg";
+import CarouselTwo from "../../photos/pexels-movidagrafica-barcelona-1474993.jpg";
+import CarouselThree from "../../photos/pexels-pixabay-279949.jpg";
 
 export default class Home extends Component {
   constructor(props) {
@@ -16,7 +19,7 @@ export default class Home extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="holder.js/800x400?text=First slide&bg=373940"
+              src={CarouselOne}
               alt="First slide"
             />
             <Carousel.Caption>
@@ -27,7 +30,7 @@ export default class Home extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="holder.js/800x400?text=Second slide&bg=282c34"
+              src={CarouselTwo}
               alt="Third slide"
             />
 
@@ -39,7 +42,7 @@ export default class Home extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="holder.js/800x400?text=Third slide&bg=20232a"
+              src={CarouselThree}
               alt="Third slide"
             />
 
@@ -51,20 +54,31 @@ export default class Home extends Component {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-        <Navbar className="navbar" bg="black" expand="lg" />
+        <Navbar
+          className="navbar"
+          bg="black"
+          expand="lg"
+          style={{ boxShadow: "11px 2px 2px 0px rgba(0,0,0,0.75)" }}
+        />
         <div className="home-content" style={{ height: "80vh" }}>
           <div className="rowOne">
             <div className="oneOne">
-              <h2>Services</h2>
-              <h4>Check Out Our Services!</h4>
+              <a href="/services">
+                <h2>Services</h2>
+                <h4>Check Out Our Services!</h4>
+              </a>
             </div>
             <div className="oneTwo">
-              <h2>About</h2>
-              <h4>Learn How We Started!</h4>
+              <a href="/about">
+                <h2>About</h2>
+                <h4>Learn How We Started!</h4>
+              </a>
             </div>
             <div className="oneThree">
-              <h2>Contact Us</h2>
-              <h4>We'd love to hear from you!</h4>
+              <a href="/contact">
+                <h2>Contact Us</h2>
+                <h4>We'd love to hear from you!</h4>
+              </a>
             </div>
           </div>
           <div className="rowTwo">-</div>

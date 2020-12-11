@@ -1,9 +1,17 @@
 .navbar {
     background-color: black;
     width: 100vw;
+
+    span, .nav-link {
+        -webkit-text-stroke-width: .04rem;
+        -webkit-text-stroke-color: white;
+    }
+
 }
 
 .nav-link:hover {
     background-color: gray;
     text-decoration: underline;
+    text-decoration-color: white;
+    border-radius: .15rem;
 }

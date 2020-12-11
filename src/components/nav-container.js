@@ -15,7 +15,7 @@ export default class NavContainer extends Component {
 
   render() {
     return (
-      <Navbar className="navbar" expand="lg" style={{boxShadow: "0px 2px 11px 0px rgba(0,0,0,0.75)"}}>
+      <Navbar className="navbar fixed-top" expand="lg" style={{boxShadow: "0px 2px 11px 0px rgba(0,0,0,0.75)"}}>
         <Navbar.Brand href="/" style={{fontStyle: 'italic', textDecoration: 'underline', textDecorationColor: 'white', marginRight: '5%'}}>
             <span style={{color: 'red'}}>No</span>    
             <span style={{color: 'white'}}> Mo'</span>

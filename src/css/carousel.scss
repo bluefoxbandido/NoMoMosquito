@@ -1,4 +1,8 @@
 .carousel {
-    height: 40vh;
+    height: 80vh;
     background-color: slategray;
+
+    img {
+        max-height: 80vh;
+    }
 }
